@@ -13,5 +13,5 @@ server.listen(3000,()=>{
 })
 
 io.on('connection',(socket)=>{
-    console.log('A user is connected')
+    console.log('A user is connected', socket.id)
 })
